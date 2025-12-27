@@ -13,7 +13,7 @@ const Page = () => {
     <main className="main-container">
       <section className="home-grid">
         <Suspense fallback={<CoinOverviewFallback />}>
-          <CoinOverview />
+          <CoinOverview coinId="bitcoin" />
         </Suspense>
 
         <Suspense fallback={<TrendingCoinsFallback />}>
